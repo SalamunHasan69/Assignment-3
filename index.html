@@ -16,7 +16,9 @@
       <!-- Nav section start -->
       <nav class="navbar navbar-expand-lg my-4">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#">Pro Edu</a>
+          <a class="navbar-brand" href="#">
+            <h3>Pro Edu</h3>
+          </a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
             data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
             aria-label="Toggle navigation">
@@ -52,6 +54,15 @@
         <div class="carousel-inner">
           <div class="carousel-item active">
             <img src="./images/cover/cover-2.jpg" class="d-block w-100 rounded-3" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h1 class="fs-1 text-dark">Get Started Digital
+                Learning</h1>
+              <p class="text-dark">It is a long established fact that a reader will be distracted by the readable
+                content of a page when looking at its layout.</p>
+              <button class="bg-info text-white rounded-3 px-3 py-2 border border-0">
+                Read More
+              </button>
+            </div>
           </div>
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
@@ -165,31 +176,31 @@
       </div>
     </section>
     <section class="container">
-      <div class="row g-0">
+      <div class="row g-0 d-flex align-items-center">
         <div class="col-5">
-          <img src="./images/working.png" alt="">
+          <img class="img-fluid" src="./images/working.png" alt="">
         </div>
         <div class="col-7 bg-light px-5 py-5">
           <div>
             <h1>Explore The elearning
               Institute</h1>
-            <p class="d-flex justify-content-center">There are many variations of passages desh
+            <p>There are many variations of passages desh
               available, but
               the
               majority have suffered alteration in some form, by injected humour, or
               randomised words which don't look even slightly believable. If you are going
               to use a passage of desh, you need to be sure.</p>
-            <p class="d-flex justify-content-center">Anything embarrassing hidden in the middle of text.
+            <p>Anything embarrassing hidden in the middle of text.
               All
               desh
               generators on the Internet tend to repeat predefined.</p>
           </div>
-          <div class="d-flex justify-content-evenly">
-            <div>
+          <div class="d-flex">
+            <div class="me-5">
               <h1>3.2K+</h1>
               <p>Online Course</p>
             </div>
-            <div>
+            <div class="me-5">
               <h1>600+</h1>
               <p>Expert member</p>
             </div>
@@ -203,7 +214,6 @@
           </button>
         </div>
       </div>
-
     </section>
     <section class="container bg-info mt-5 rounded-3 d-flex justify-content-around align-items-center">
       <div class="w-25 py-4">
@@ -212,9 +222,30 @@
           readable content of a page when looking at its layout.</p>
       </div>
       <div>
-        <button class="bg-white text-info rounded-3 px-3 py-2 border border-0">
+        <!-- Button trigger modal -->
+        <button type="button" class="btn btn-light rounded-3 px-3 py-2 text-info border border-0" data-bs-toggle="modal"
+          data-bs-target="#exampleModal">
           Register Now
         </button>
+
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Assignment-3</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                Bonus marks added
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
     <section class="container mt-5">
@@ -383,7 +414,7 @@
         </div>
       </div>
     </div>
-    <section>
+    <section class="d-none d-lg-block">
       <h1 class="d-flex justify-content-center align-items-center mt-5">Trusted by over 800+ companies</h1>
       <div class="d-flex justify-content-evenly my-5">
         <img class="img-fluid" src="./images/company/company-1.png" alt="">
